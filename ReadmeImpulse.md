@@ -14,7 +14,9 @@
 - [ ] npm install -D tailwindcss postcss autoprefixer
 - [ ] https://github.com/phosphor-icons/phosphor-home // icones de sites
 - [ ] npm install phosphor-react
-
+- [ ] acessibilidade
+- [ ] headless.dev / dos mesma empresa do tailwid
+- [ ] npm install @headlessui/react
 ### exemplo de utilização de tailwind
 ```
 interface ButtonProps {
