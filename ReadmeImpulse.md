@@ -1,0 +1,12 @@
+- [ ] Node Lts
+- [ ] npm
+- [ ] vs code
+- [ ] Fluxo SPA (single page application)
+- [ ] npm create vite@latest
+- [ ] https://tailwindcss.com/docs/installation/using-postcss
+- [ ] npm install -D tailwindcss
+- [ ] npm install -D tailwindcss
+- [ ] npx tailwindcss init
+- [ ] content: ["./src/**/*.{html,js}"],
+- [ ] npx tailwindcss init -p
+- [ ] npm install -D tailwindcss postcss autoprefixer
