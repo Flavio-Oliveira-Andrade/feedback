@@ -2,6 +2,7 @@ import { useState } from "react";
 
 import { CloseButton } from "../ClosedButton";
 import { FeedbackTpeStep } from "./Steps /FeedbackTypeStep";
+import { FeedbackContentStep } from "./Steps /FeedbackContentStep";
 
 import bugImageUrl from "../../images/bug.svg";
 import ideiaImageUrl from "../../images/ideia.svg";
@@ -49,7 +50,10 @@ export function WidgetForm() {
 
       {!feedbackType ? (
         <FeedbackTpeStep onFeedbackTypeChange={setFeedbackType} />
-      ):<p>hello world</p>
+      ) :
+          (
+            <FeedbackContentStep />
+          )
       }
 
       <footer className="text-xs text-neutral-400">
