@@ -17,6 +17,7 @@
 - [ ] acessibilidade
 - [ ] headless.dev / dos mesma empresa do tailwid
 - [ ] npm install @headlessui/react
+- [ ] npm install -D @tailwindcss/forms
 ### exemplo de utilização de tailwind
 ```
 interface ButtonProps {
