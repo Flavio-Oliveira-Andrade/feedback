@@ -4,8 +4,8 @@ import { useState } from "react";
 import { Loading } from "./loading";
 
 interface ScreenshotButtonProps {
-  screenshot: string;
-  onScreenshotTook: (screenshot: string) => void;
+  screenshot: string | null;
+  onScreenshotTook: (screenshot: string | null) => void;
 }
 
 
@@ -26,6 +26,12 @@ export function ScreenshotButton(props: ScreenshotButtonProps) {
       <button
         type="button"
         className="p-1 w-10 h-10 rounded-md border-transparent flex justify-end items-end text-zinc-400 hover:text-zinc-100 transition-colors "
+        onClick={()=> props.onScreenshotTook(null)}
+        style={{
+           backgroundImage: `url(${props.screenshot})`,
+           backgroundPosition: 'right bottom',
+           backgroundSize: 180,
+        }}
       >
         <Trash  weight="fill"/>
       </button>
