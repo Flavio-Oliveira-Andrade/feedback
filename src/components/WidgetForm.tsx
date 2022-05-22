@@ -23,7 +23,7 @@ const feedbackTypes = {
 
   },
   OTHER: {
-    title: "Outros",
+    title: "Outro",
     image: {
       source: thoughtImageUrl,
       alt: "Imagem de um balão de pensamento",
@@ -45,7 +45,7 @@ export function WidgetForm() {
           return(
             <button
               key={key}
-              className=""
+              className="bg-zinc-800 rounded-lg py-5 w-24 flex-1 flex flex-col items-center gap-2 border-2 border-transparent hover:border-brand-500 focus:border-brand-500 focus:outline-none"
               //onClick={}
               type="button"
             >
