@@ -19,6 +19,7 @@
 - [ ] npm install @headlessui/react
 - [ ] npm install -D @tailwindcss/forms
 - [ ] npm install --sace-dev tailwind-scrollbar
+- [ ] npm install html2canvas //screenshot
 ### exemplo de utilização de tailwind
 ```
 interface ButtonProps {
