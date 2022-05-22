@@ -4,17 +4,27 @@ import { CloseButton } from "../../ClosedButton"
 
 interface FeedbackContentStepProps {
   feedbackType : FeedbackType
+  onfeedbackRestartrequested :()=> void;
 }
 
 
-export function FeedbackContentStep({ feedbackType }: FeedbackContentStepProps ){
+export function FeedbackContentStep({
+  feedbackType,
+  onfeedbackRestartrequested
+}: FeedbackContentStepProps ) {
   const feedbackTypeInfo = feedbackTypes[feedbackType];
+
   return (
     <>
       <header>
-        <button type="button" className=" top-5 left-5 absolute text-zinc-400 hover:text-zinc-100 ">
+        <button
+          type="button"
+          className=" top-5 left-5 absolute text-zinc-400 hover:text-zinc-100 "
+          onClick={onfeedbackRestartrequested}
+        >
           <ArrowLeft weight="bold" className="w-4 h-4" />
         </button>
+
         <span className="text-xl landing-6 flex items-center gap-2 ">
           <img src={feedbackTypeInfo.image.source} alt={feedbackTypeInfo.image.alt} className="w-6 h-6" />
           {feedbackTypeInfo.title}
@@ -24,9 +34,11 @@ export function FeedbackContentStep({ feedbackType }: FeedbackContentStepProps )
 
       </header>
 
-      <div className="flex py-8 gap-2 w-full">
-
-      </div>
+      <form className="my-4 w-full" >
+        <textarea className=""
+          placeholder="Conte com detalhe o que esta acontecendo..."
+        />
+      </form>
     </>
   )
 }
