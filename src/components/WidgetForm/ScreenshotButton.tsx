@@ -29,7 +29,7 @@ export function ScreenshotButton(props: ScreenshotButtonProps) {
         onClick={()=> props.onScreenshotTook(null)}
         style={{
            backgroundImage: `url(${props.screenshot})`,
-           backgroundPosition: 'right bottom',
+           backgroundPosition: 'right ',
            backgroundSize: 180,
         }}
       >
